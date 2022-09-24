@@ -510,7 +510,7 @@ a {
 }
 
 .no-webp .eror404 {
-  background: url("/img/error404.jpg") 50%/cover no-repeat; }
+  background: url("@img/error404.jpg") 50%/cover no-repeat; }
 
 .eror404 {
   height: 100vh;
@@ -621,4 +621,4 @@ a {
 
 .webp .initial { background: url(../img/initial.webp) center 30%/cover no-repeat; }
 
-.webp .eror404 { background: url(/img/error404.webp) 50%/cover no-repeat; }
+.webp .eror404 { background: url(@img/error404.webp) 50%/cover no-repeat; }
