@@ -59,14 +59,37 @@ window.addEventListener("scroll", ()=>{
 
 
 
+const userName = document.querySelector("#userName");
+const userEmail = document.querySelector("#userEmail");
+let btnPush = document.querySelector(".btnPush");
+const regName = /^[а-яА-Яa-zA-ZЄ-ЯҐа-їґ0-9]{3,}$/;
+let regEmail = /^[a-zA-Z0-9_]+@[a-z0-9-]+\.[a-z]{2,6}$/;
+
+btnPush.addEventListener("click" , ()=>{
+
+if(regName.test(userName.value)){
+	userName.style.borderBottom = "1px solid #fff";
+}else{
+	userName.style.borderBottom = "1px solid red";
+}
+
+if(regEmail.test(userEmail.value)){
+	userEmail.style.borderBottom = "1px solid #fff";
+}else{
+	userEmail.style.borderBottom = "1px solid red"; 
+}
+
+
+if(regName.test(userName.value) && regEmail.test(userEmail.value)){
+	console.log("active modal");
+}
 
 
 
 
 
 
-
-////forms
+});
 
 
 

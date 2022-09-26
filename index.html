@@ -7,8 +7,8 @@
 	<title>Document</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap&_v=20220926144732" rel="stylesheet">  
-	<link rel="stylesheet" href="css/style.css?_v=20220926144732">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap&_v=20220926183553" rel="stylesheet">  
+	<link rel="stylesheet" href="css/style.css?_v=20220926183553">
 </head>
 <body>
 
@@ -74,7 +74,7 @@
 <section class="initial d-flex a-i-center j-c-center flex-column">
 	<h1 class="upper initial__title">web applications</h1>
 	<p class="initial__p">Повседневная практика.</p>
-	<a class="d-flex a-i-center initial__btn" href="404.html">
+	<a class="d-flex a-i-center initial__btn  btn" href="404.html">
 		<span>Спец предложение</span>
 		<img src="img/i-arrow.svg" alt="">
 	</a>
@@ -105,7 +105,7 @@
 		<h2 class="portfolio__title">Портфолио</h2>
 		<div class="portfolio__main d-flex a-i-center j-c-center flex-column">
 			<picture><source srcset="img/portfolio.webp" type="image/webp"><img src="img/portfolio.png" alt="img portfolio"></picture>
-			<a class="portfolio__btn d-flex a-i-center" href="404.html">
+			<a class="portfolio__btn btn d-flex a-i-center" href="404.html">
 				<span>Перейти на сайт</span>
 				<img src="img/i-arrow.svg" alt="arrow">
 			</a>
@@ -166,7 +166,7 @@
 				<p>Продвижение в социальных сетях</p>
 			</div>
 			<div class="d-none480 services__main-item d-flex flex-column a-i-center j-c-center border-b-none">
-				<a class="services__main-btn d-flex a-i-center" href="404.html">
+				<a class="services__main-btn btn d-flex a-i-center" href="404.html">
 					<span>Подробнее</span>
 					<img src="img/arrow-fff.svg" alt="">
 				</a>
@@ -224,16 +224,16 @@
 		<div class="subfooter__img-body d-flex j-c-center a-i-start flex-column ">
 			<h2 class="subfooter__img-title">Заявка</h2>
 				<span>Ваше имя</span>
-				<input type="text" tabindex="1">
+				<input id="userName" type="text" tabindex="1">
 	
 
 				<span>Ваш Email</span>
-				<input type="text" tabindex="2">
+				<input id="userEmail" type="text" tabindex="2">
 
 
 				<span>Сообщение</span>
 				<textarea name="comment" tabindex="3"></textarea>
-				<button class="d-flex a-i-center">
+				<button class="btnPush d-flex btn a-i-center">
 					<span >Отправить</span>
 					<img src="img/arrow-fff.svg" alt="arrow">
 				</button>
@@ -243,27 +243,27 @@
 		<h2 class="subfooter__black-title cen">Спец предложения</h2>
 		<div class="subfooter__black-net d-flex j-c-center">
 
-			<div class="subfooter__black-item subfooter__col">
+			<a href="404.html" class="subfooter__black-item subfooter__col">
 				<h3>Landing Page</h3>
 				<p class="subfooter__black-p">продающая посадочная страница.</p>
 				<p class="subfooter__black-oldPrice">200 000 ₸</p>
 				<p class="subfooter__black-price">150 000 ₸</p>
-			</div>
+			</a>
 
-			<div class="subfooter__black-item subfooter__col subfooter__col-color">
+			<a href="404.html" class="subfooter__black-item subfooter__col subfooter__col-color">
 				<h3>Бизнес сайт</h3>
 				<p class="subfooter__black-p">Корпоративный сайт</p>
 				<p class="subfooter__black-oldPrice">90 000₸</p>
 				<p class="subfooter__black-price">80 000 ₸</p>
-			</div>
+			</a>
 
-			<div class="subfooter__black-item subfooter__col">
+			<a href="404.html" class="subfooter__black-item subfooter__col">
 				<h3>Контекстная
 					реклама</h3>
 				<p class="subfooter__black-p">Запуск контекстной рекламы на месяц</p>
 				<p class="subfooter__black-oldPrice"></p>
 				<p class="subfooter__black-price">Бесплатно</p>
-			</div>
+			</a>
 
 			
 		</div>
@@ -273,8 +273,76 @@
 
 
 
-<footer>
-	footer
+<footer class="footer">
+	<div class="content">
+	<div class="footer__main">
+		<div class="footer__main-item">
+			<h4>Пункт</h4>
+			<p>В своём стремлении улучшить пользовательский опыт мы упускаем, что многие известные личности.</p>
+			<ul>
+				<li>Пункт</li>
+				<li>Пункт</li>
+			</ul>
+		</div>
+		<div class="footer__main-item">
+			<h4>Пункт</h4>
+			<p>В своём стремлении улучшить пользовательский опыт мы упускаем, что многие известные личности.</p>
+			<ul>
+				<li>Пункт</li>
+				<li>Пункт</li>
+			</ul>
+		</div>
+
+
+		<div class="footer__main-item ">
+			<h4>Пункт</h4>
+			<p>В своём стремлении улучшить пользовательский опыт мы упускаем, что многие известные личности.</p>
+			<ul>
+				<li>Пункт</li>
+				<li>Пункт</li>
+			</ul>
+		</div>
+
+		<div class="footer__main-item b-none">
+			<h4>Контакты</h4>
+			<ul>
+				<li><a class="footer__contact-line d-flex a-i-center" href="tel: +38095987878">
+						<img src="img/footer__tel.svg" alt="tel">
+						<span>+7 777 7777 77 77</span>
+				</a></li>	
+				<li><a class="footer__contact-line d-flex a-i-center" href="https://www.gmail.com/mail/help/intl/ru/about.html?de.">
+					<img src="img/footer__gmail.svg" alt="tel">
+					<span>email991@gmail.ua</span>
+			</a></li>
+			<li class="footer__contact-line d-flex a-i-center">
+				<img src="img/footer__map.svg" alt="tel">
+				<span>г. Стрептів</span>
+		</li>	
+			</ul>
+		</div>
+
+	</div>
+
+	<div class="footer__bottom d-flex a-i-center j-c-space">
+		<img src="img/footer__logo.svg" alt="logo compani">
+		<div class="footer__social-networks d-flex a-i-center">
+			<div class="social-networks__wr d-flex a-i-center j-c-center cu-po">
+				<a href="404.html"><img src="img/telegram.svg" alt="tele"></a>
+			</div>
+			<div class="social-networks__wr d-flex a-i-center j-c-center cu-po">
+				<a href="404.html"><img src="img/vk.svg" alt="tele"></a>
+			</div>
+			<div class="social-networks__wr d-flex a-i-center j-c-center cu-po">
+				<a href="404.html"><img src="img/inst.svg" alt="tele"></a>
+			</div>
+			<div class="social-networks__wr d-flex a-i-center j-c-center cu-po">
+				<a href="404.html"><img src="img/viber.svg" alt="tele"></a>
+			</div>
+			<div class="social-networks__wr d-flex a-i-center j-c-center cu-po">
+				<a href="404.html"><img src="img/email.svg" alt="tele"></a>
+			</div>
+	</div>
+</div>
 </footer>
 
 
@@ -282,6 +350,6 @@
 
 
 
-<script src="js/app.js?_v=20220926144732"></script>
+<script src="js/app.js?_v=20220926183553"></script>
 </body>
 </html>
