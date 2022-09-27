@@ -24,7 +24,10 @@ isWebp();
 const btnBurger = document.querySelector(".header__burger");
 const burger = document.querySelector(".burger__open");
 const burgerClose = document.querySelector(".burger__close");
-
+const modal = document.querySelector(".modal__wr");
+const header = document.querySelector("header");
+const userName = document.querySelector("#userName");
+const userEmail = document.querySelector("#userEmail");
 
 
 burgerClose.addEventListener("click", ()=>{
@@ -47,7 +50,7 @@ btnBurger.addEventListener("click", ()=>{
 
 
 
-let header = document.querySelector("header");
+
 
 window.addEventListener("scroll", ()=>{
 	if(scrollY>10){
@@ -59,8 +62,7 @@ window.addEventListener("scroll", ()=>{
 
 
 
-const userName = document.querySelector("#userName");
-const userEmail = document.querySelector("#userEmail");
+
 let btnPush = document.querySelector(".btnPush");
 const regName = /^[а-яА-Яa-zA-ZЄ-ЯҐа-їґ0-9]{3,}$/;
 let regEmail = /^[a-zA-Z0-9_]+@[a-z0-9-]+\.[a-z]{2,6}$/;
@@ -80,17 +82,32 @@ if(regEmail.test(userEmail.value)){
 }
 
 
+
 if(regName.test(userName.value) && regEmail.test(userEmail.value)){
-	console.log("active modal");
+	modal.classList.add("modal__active");
 }
-
-
-
-
-
-
 });
 
+
+
+
+modal.addEventListener("click", ()=>{
+	modal.classList.remove("modal__active");
+})
+
+
+
+
+
+
+
+window.addEventListener("scroll", ()=>{
+	if(scrollY > 100){
+		header.classList.add("header__scroll");
+	}else{
+		header.classList.remove("header__scroll");
+	}
+});
 
 
 
