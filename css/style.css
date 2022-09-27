@@ -509,6 +509,7 @@ h2 {
   min-height: 100%;
   padding-bottom: calc(90px + 83 * ((100vw - 320px) / 1130));
   padding-right: calc(20px + 50 * ((100vw - 320px) / 1130));
+  padding-left: calc(20px + 30 * ((100vw - 320px) / 1130));
   height: 100%;
 }
 
@@ -527,7 +528,6 @@ h2 {
 
 .subfooter__img-body {
   width: 100%;
-  padding-left: calc(10px + 40 * ((100vw - 320px) / 1130));
 }
 
 .subfooter__img-title {
@@ -913,7 +913,7 @@ h2 {
   background: url("../img/benefits_bg.jpg") center center/cover no-repeat; }
 
 .benefits {
-  padding-top: calc(200px + 136 * ((100vw - 320px) / 1130));
+  padding-top: calc(40px + 296 * ((100vw - 320px) / 1130));
   padding-bottom: calc(30px + 180 * ((100vw - 320px) / 1130));
   position: relative;
 }
@@ -1027,6 +1027,10 @@ h2 {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+  }
+
+  .subfooter__img-title {
+    text-align: center;
   }
 
   .subfooter__bg-black {
